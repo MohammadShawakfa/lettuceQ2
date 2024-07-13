@@ -1,0 +1,26 @@
+<div class="cart">
+    <button (click)="goBack()" class="back-button">Home</button>
+    <div *ngIf="cartsItems.length > 0; else emptyCart" >
+    <div *ngFor="let item of cartsItems" class="cart-item">
+      <img [src]="item.image" alt="{{item.name}}" class="item-image">
+      <div class="item-details">
+        <h3>{{item.name}}</h3>
+        <p>Price: {{item.price}} JOD</p>
+        <p>Quantity: {{item.count}}</p>
+        <p>Total Price: {{item.totalPrice}}</p>
+      </div>
+    </div>
+    </div>
+    <div class="cart-total">
+      <h3>Total Price: {{totalPrice}} JOD</h3>
+    </div>
+    <ng-template #emptyCart>
+        <div class="empty-cart-message">
+          <h3>Your cart is currently empty.</h3>
+        </div>
+      </ng-template>   
+      <button (click)="checkout()" class="checkout-button" *ngIf="cartsItems.length>0">Checkout</button> 
+  </div>
+
+  
+  

@@ -1,0 +1,87 @@
+[
+    {
+      "name": "Bread",
+      "price": 0.3,
+      "image": "assets/items/bread.svg",
+      "categorieID":5,
+      "id":1
+    },
+    {
+      "name": "Chicken",
+      "price": 1.65,
+      "image": "assets/items/chicken.svg",
+      "categorieID":2,
+      "id":2
+    },
+    {
+      "name": "Fish",
+      "price": 5,
+      "image": "assets/items/fish.svg",
+      "categorieID":1,
+      "id":3
+    },
+    {
+      "name": "Chips",
+      "price": 0.1,
+      "image": "assets/items/chips.svg",
+      "categorieID":3,
+      "id":4
+    },
+    {
+      "name": "Water",
+      "price": 2.25,
+      "image": "assets/items/water.svg",
+      "categorieID":3,
+      "id":5
+    },
+    {
+      "name": "Meat",
+      "price": 7.5,
+      "image": "assets/items/meat.svg",
+      "categorieID":1,
+      "id":6
+    },
+    {
+      "name": "Indomie",
+      "price": 1,
+      "image": "assets/items/ramen.svg",
+      "categorieID":3,
+      "id":7
+    },
+    {
+      "name": "Matrix",
+      "price": 0.25,
+      "image": "assets/items/soda.svg",
+      "categorieID":3,
+      "id":8
+    },
+    {
+      "name": "cucumber",
+      "price": 0.4,
+      "image": "assets/items/cucumber.svg",
+      "categorieID":6,
+      "id":9
+    },
+    {
+      "name": "Oranges",
+      "price": 0.75,
+      "image": "assets/items/oranges.svg",
+      "categorieID":6,
+      "id":10
+    },
+    {
+      "name": "Coffee",
+      "price": 2.5,
+      "image": "assets/items/coffee.svg",
+      "categorieID":4,
+      "id":11
+    },
+    {
+      "name": "Tea",
+      "price": 1,
+      "image": "assets/items/tea.svg",
+      "categorieID":4,
+      "id":12
+    }
+  ]
+  

@@ -1,0 +1,40 @@
+<header>
+    <div class="logo">
+      <img src="assets/lettuce-logo.png" alt="Lettuce Logo">
+      <h2>Take Care of Your Groceries!</h2>
+    </div>
+    <nav>
+      <button (click)="goToCart()" class="cart-button">
+        <mat-icon>shopping_cart</mat-icon>
+        Cart
+      </button>
+      <button (click)="logout()" class="logout-button" *ngIf="isLoggedIn">
+        Logout
+      </button>
+      <button (click)="signUp()" class="logout-button" *ngIf="!isLoggedIn">
+        Sign Up
+      </button>
+        </nav>
+  </header>
+
+<!-- Container for categories -->
+<div class="categories-container categories" *ngIf="!itemsView">
+    <ul>
+        <li *ngFor="let categorie of categories" class="item" (click)="goToCategory(categorie.id)">
+            <img [src]="categorie.image" alt="{{categorie.name}}">
+            <h3>{{categorie.name}}</h3>
+        </li>
+    </ul>
+</div>
+
+<!-- Container for items -->
+<div class="items-container" *ngIf="itemsView">
+    <div *ngFor="let item of itemsToShow" class="item">
+        <img [src]="item.image" alt="{{item.name}}">
+        <h3>{{item.name}}</h3>
+        <p>Price: {{item.price}} JOD</p>
+        <button (click)="addToCart(item)" class="cartBtn">Add to cart</button>
+    </div>
+</div>
+
+<button *ngIf="itemsView" (click)="itemsView=!itemsView" class="backBtn">Back</button>
